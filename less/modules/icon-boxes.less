@@ -1,0 +1,33 @@
+.icon-box{
+	&.filled{
+		background-color: @active-color;
+		color:#fff;
+		padding: 80px;
+		.img-wrap{
+			height: 62px;
+			margin-bottom: 20px;
+		}
+		img{
+			
+			max-height: 100%;
+			width: auto;
+		}
+		h5{
+			font-size: 18px;
+			font-weight: 700;
+			line-height: 30px;
+			margin-bottom: 20px;
+		}
+		p{
+			color: rgba(255, 255, 255, 0.8);
+			line-height: 32px;
+			font-size: 14px;
+		}
+		&.filled-5{
+			background-color: darken(@active-color, 5%);
+		}
+		&.filled-10{
+			background-color: darken(@active-color, 10%);
+		}
+	}
+}

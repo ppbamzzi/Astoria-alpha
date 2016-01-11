@@ -1,0 +1,21 @@
+.btn-default{
+	color: #fff;
+	font-family: 'Raleway', sans-serif;
+	font-size: 13px;
+	padding: 15px 50px;
+	font-weight: 700;
+	background-color: transparent;
+	border-radius: 0;
+	text-transform: uppercase;
+	border:1px solid rgba(255, 255, 255, 0.6);
+	.transition();
+	&.filled{
+		background-color: @active-color;
+		border-color: @active-color;
+		&:hover{
+			color: #fff;
+			background-color: darken(@active-color, 10%);
+			border-color: darken(@active-color, 10%);
+		}
+	}
+}
